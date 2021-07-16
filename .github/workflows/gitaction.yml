@@ -34,6 +34,7 @@ jobs:
       id: docker_build
       uses: docker/build-push-action@v2
       with:
+        registry: docker.io
         image: nitinigi2/demo
         push: true
         tags: user/app:latest
