@@ -10,7 +10,7 @@ import (
 func main() {
 	fmt.Println("Main function called")
 	handleRequests()
-	log.Fatal(http.ListenAndServe(os.Getenv("PORT"), nil))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), nil))
 }
 
 func handleRequests() {
