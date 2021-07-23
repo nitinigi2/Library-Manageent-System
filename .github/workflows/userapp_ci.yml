@@ -2,10 +2,8 @@ name: Go
 
 on:
   push:
-    paths: 'userapp/**'
     branches: [ master ]
   pull_request:
-    paths: 'userapp/**'
     branches: [ master ]
 
 jobs:
